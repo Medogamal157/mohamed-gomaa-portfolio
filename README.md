@@ -23,4 +23,4 @@ Open: `http://127.0.0.1:4173`
 
 This is a static site. The simplest deployment is to push this folder to GitHub and import it into Vercel as a static project.
 
-After deployment, update the canonical and Open Graph URL in `index.html` from the placeholder to the final Vercel URL.
+Canonical and Open Graph URL are set to the Vercel production alias.
