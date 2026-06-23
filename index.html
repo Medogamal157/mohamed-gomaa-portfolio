@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamed Gomaa — Full-Stack Software Engineer</title>
+  <meta name="description" content="Mohamed Gomaa is a Full-Stack Software Engineer in Egypt building scalable .NET, React, Next.js, AI-powered, healthcare, logistics, and enterprise web systems." />
+  <meta name="theme-color" content="#07111f" />
+  <link rel="canonical" href="https://mohamed-gomaa-portfolio.vercel.app/" />
+  <meta property="og:title" content="Mohamed Gomaa — Full-Stack Software Engineer" />
+  <meta property="og:description" content="Result-focused portfolio covering AI platforms, healthcare integrations, logistics admin systems, secure APIs, and scalable web applications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mohamed-gomaa-portfolio.vercel.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohamed Gomaa",
+    "jobTitle": "Full-Stack Software Engineer",
+    "email": "mailto:m7mdgamal157@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Giza", "addressCountry": "EG" },
+    "url": "https://mohamed-gomaa-portfolio.vercel.app/",
+    "sameAs": [
+      "https://www.linkedin.com/in/mohamed-gomaa-7b88b727b/",
+      "https://github.com/Medogamal157"
+    ],
+    "knowsAbout": [".NET Core", "React", "Next.js", "Microservices", "Clean Architecture", "MCP integrations", "Healthcare integrations", "REST APIs"]
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050913;
+      --bg-2: #07111f;
+      --surface: rgba(255,255,255,.055);
+      --surface-strong: rgba(255,255,255,.09);
+      --line: rgba(166, 214, 255, .18);
+      --line-strong: rgba(125, 224, 255, .42);
+      --text: #f5f8ff;
+      --muted: #a9b7ca;
+      --soft: #718197;
+      --cyan: #6ee7ff;
+      --green: #7dffba;
+      --violet: #a78bfa;
+      --warning: #ffd166;
+      --shadow: 0 24px 80px rgba(0,0,0,.45);
+      --radius: 24px;
+      --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 14% 10%, rgba(110,231,255,.16), transparent 31rem),
+        radial-gradient(circle at 86% 4%, rgba(125,255,186,.09), transparent 28rem),
+        linear-gradient(180deg, var(--bg), var(--bg-2) 42%, #05070d);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; }
+    .skip-link { position: absolute; top: -48px; left: 16px; background: var(--cyan); color: #021018; padding: 10px 14px; border-radius: 999px; z-index: 100; font-weight: 800; }
+    .skip-link:focus { top: 16px; }
+    .shell { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+    .topbar {
+      position: sticky; top: 0; z-index: 20; backdrop-filter: blur(18px);
+      background: rgba(5,9,19,.74); border-bottom: 1px solid var(--line);
+    }
+    nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: -.04em; }
+    .brand-mark { width: 42px; height: 42px; border: 1px solid var(--line-strong); border-radius: 14px; display: grid; place-items: center; background: linear-gradient(135deg, rgba(110,231,255,.14), rgba(125,255,186,.12)); box-shadow: 0 0 38px rgba(110,231,255,.15); }
+    .nav-links { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 14px; }
+    .nav-links a { min-height: 44px; display: grid; place-items: center; padding: 0 13px; border-radius: 999px; }
+    .nav-links a:hover { background: var(--surface); color: var(--text); }
+    .hero { padding: 74px 0 48px; display: grid; grid-template-columns: 1.06fr .94fr; gap: 42px; align-items: center; min-height: calc(100vh - 72px); }
+    .eyebrow { color: var(--green); font: 800 12px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .16em; text-transform: uppercase; }
+    h1, h2, h3 { line-height: 1.05; margin: 0; letter-spacing: -.055em; text-wrap: balance; }
+    h1 { font-size: clamp(3.1rem, 9vw, 7.6rem); margin-top: 18px; }
+    h2 { font-size: clamp(2.2rem, 5.6vw, 4.6rem); }
+    h3 { font-size: clamp(1.25rem, 2.2vw, 1.75rem); letter-spacing: -.035em; }
+    .gradient-text { background: linear-gradient(90deg, #fff, var(--cyan), var(--green)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .lede { color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.35rem); max-width: 720px; margin: 22px 0 0; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .btn { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 999px; padding: 0 18px; font-weight: 800; border: 1px solid var(--line); }
+    .btn.primary { color: #041019; background: linear-gradient(90deg, var(--cyan), var(--green)); border: none; box-shadow: 0 12px 42px rgba(110,231,255,.16); }
+    .btn.ghost { color: var(--text); background: rgba(255,255,255,.055); }
+    .metrics { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; margin-top: 34px; }
+    .metric { padding: 14px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.04); }
+    .metric strong { display: block; font-size: 1.2rem; }
+    .metric span { color: var(--soft); font-size: 13px; }
+    .visual-card { position: relative; min-height: 480px; border: 1px solid var(--line); border-radius: 36px; overflow: hidden; background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.025)); box-shadow: var(--shadow); }
+    #mesh { width: 100%; height: 100%; min-height: 480px; display: block; opacity: .88; }
+    .visual-overlay { position: absolute; inset: auto 20px 20px; display: grid; gap: 10px; }
+    .system-pill { display: flex; justify-content: space-between; gap: 18px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 16px; background: rgba(5,9,19,.78); backdrop-filter: blur(12px); color: var(--muted); font-size: 13px; }
+    .system-pill b { color: var(--text); }
+    section { padding: 86px 0; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 28px; }
+    .section-head p { margin: 12px 0 0; max-width: 680px; color: var(--muted); }
+    .grid { display: grid; gap: 16px; }
+    .overview-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
+    .card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 22px; box-shadow: 0 8px 40px rgba(0,0,0,.16); }
+    .card:hover { border-color: rgba(110,231,255,.34); background: var(--surface-strong); transform: translateY(-2px); transition: .18s ease; }
+    .card p, .case p, .timeline p { color: var(--muted); margin: 10px 0 0; }
+    .icon { width: 44px; height: 44px; border-radius: 16px; display: grid; place-items: center; background: rgba(110,231,255,.1); color: var(--cyan); border: 1px solid var(--line); margin-bottom: 16px; font-weight: 900; }
+    .timeline { position: relative; display: grid; gap: 16px; }
+    .timeline-item { display: grid; grid-template-columns: 220px 1fr; gap: 18px; align-items: start; }
+    .date { color: var(--green); font: 800 13px ui-monospace, SFMono-Regular, Menlo, monospace; padding-top: 8px; }
+    .stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .tag { font: 800 12px ui-monospace, SFMono-Regular, Menlo, monospace; color: #caf7ff; border: 1px solid var(--line); background: rgba(110,231,255,.07); padding: 7px 10px; border-radius: 999px; }
+    .case-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .case { padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 28px; background: rgba(255,255,255,.052); }
+    .case.featured { grid-column: span 2; display: grid; grid-template-columns: .85fr 1.15fr; }
+    .case-top { padding: 24px; border-bottom: 1px solid var(--line); background: linear-gradient(135deg, rgba(110,231,255,.1), rgba(125,255,186,.045)); }
+    .case-body { padding: 24px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .badge { font: 900 11px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .06em; text-transform: uppercase; color: #031018; background: var(--green); padding: 7px 9px; border-radius: 999px; }
+    .badge.private { background: var(--warning); }
+    .badge.team { background: var(--cyan); }
+    .proof-list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+    .proof-list li { border-left: 2px solid rgba(110,231,255,.55); padding-left: 12px; color: var(--muted); }
+    .proof-list strong { color: var(--text); }
+    .skills-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
+    .skill-card ul { padding-left: 18px; margin: 14px 0 0; color: var(--muted); }
+    .quality { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .contact-card { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items: stretch; padding: 28px; border-radius: 32px; border: 1px solid var(--line-strong); background: linear-gradient(135deg, rgba(110,231,255,.12), rgba(125,255,186,.055)); }
+    .contact-actions { display: grid; gap: 12px; align-content: center; }
+    footer { padding: 34px 0 46px; color: var(--soft); border-top: 1px solid var(--line); }
+    .muted { color: var(--muted); }
+    @media (max-width: 940px) {
+      .hero, .case.featured, .contact-card { grid-template-columns: 1fr; }
+      .overview-grid, .skills-grid, .quality { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .metrics { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .timeline-item { grid-template-columns: 1fr; gap: 4px; }
+      .case-grid { grid-template-columns: 1fr; }
+      .case.featured { grid-column: auto; }
+      .visual-card { min-height: 340px; }
+      #mesh { min-height: 340px; }
+    }
+    @media (max-width: 680px) {
+      .shell { width: min(100% - 22px, var(--max)); }
+      nav { align-items: start; padding: 12px 0; }
+      .nav-links { flex-wrap: wrap; justify-content: flex-end; gap: 2px; font-size: 12px; }
+      .nav-links a { padding: 0 8px; }
+      .hero { padding-top: 42px; min-height: auto; }
+      section { padding: 58px 0; }
+      .overview-grid, .skills-grid, .quality, .metrics { grid-template-columns: 1fr; }
+      .section-head { display: block; }
+      .card, .case-top, .case-body { padding: 18px; }
+      h1 { font-size: clamp(3rem, 18vw, 4.6rem); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .001ms !important; }
+      #mesh { display: none; }
+      .visual-card { min-height: auto; padding: 24px; }
+      .visual-card::before { content: "Optional motion disabled. Core proof stays visible."; color: var(--muted); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <nav class="shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Mohamed Gomaa home"><span class="brand-mark">MG</span><span>Mohamed Gomaa</span></a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#quality">Quality</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow">Full-stack / backend-heavy software engineer</div>
+        <h1 id="hero-title">Mohamed <span class="gradient-text">Gomaa</span></h1>
+        <p class="lede">I build secure APIs, scalable .NET services, React/Next.js applications, and AI-powered workflow tools for healthcare, logistics, real estate, education, and enterprise operations.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View case studies</a>
+          <a class="btn ghost" href="mailto:m7mdgamal157@gmail.com">Email me</a>
+          <a class="btn ghost" href="public/Mohamed_Gomaa_FlowCV_Resume_2026-06-23.pdf" download>Download CV</a>
+        </div>
+        <div class="metrics" aria-label="Professional highlights">
+          <div class="metric"><strong>3+ yrs</strong><span>Production engineering</span></div>
+          <div class="metric"><strong>.NET + React</strong><span>Full-stack delivery</span></div>
+          <div class="metric"><strong>AI / MCP</strong><span>Automation integrations</span></div>
+          <div class="metric"><strong>Healthcare</strong><span>Secure data workflows</span></div>
+        </div>
+      </div>
+      <aside class="visual-card" aria-label="Decorative lightweight systems animation">
+        <canvas id="mesh" aria-hidden="true"></canvas>
+        <div class="visual-overlay">
+          <div class="system-pill"><b>Architecture</b><span>Clean • Microservices • APIs</span></div>
+          <div class="system-pill"><b>Delivery</b><span>Result-focused systems, not portfolio fluff</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="overview" class="shell" aria-labelledby="overview-title">
+      <div class="section-head"><div><div class="eyebrow">Overview</div><h2 id="overview-title">Engineering value, made visible.</h2><p>Same clean portfolio flow as the reference site, but with sharper proof: what was built, why it mattered, and where Mohamed contributed.</p></div></div>
+      <div class="grid overview-grid">
+        <article class="card"><div class="icon">API</div><h3>Backend Engineering</h3><p>.NET Core, REST APIs, secure auth, RBAC, SQL optimization, clean architecture, and integration-heavy backend services.</p></article>
+        <article class="card"><div class="icon">UI</div><h3>Full-Stack Products</h3><p>React, Next.js, TypeScript, Material UI, Tailwind, and user-facing workflows tied to real business operations.</p></article>
+        <article class="card"><div class="icon">AI</div><h3>AI & Automation</h3><p>MCP-based integrations, AI helpers, data processing, knowledge retrieval, workflow automation, and operational tools.</p></article>
+        <article class="card"><div class="icon">OPS</div><h3>Scalable Systems</h3><p>Microservices, messaging, async workflows, third-party synchronization, AWS/GCP, and production maintainability.</p></article>
+      </div>
+    </section>
+
+    <section id="experience" class="shell" aria-labelledby="experience-title">
+      <div class="section-head"><div><div class="eyebrow">Experience</div><h2 id="experience-title">Built across AI, healthcare, logistics, and enterprise workflows.</h2></div></div>
+      <div class="timeline">
+        <article class="timeline-item"><div class="date">11/2025 — Present</div><div class="card"><h3>Software Engineer — Flairstech</h3><p>Developing scalable solutions with clean architecture, AI-powered tools, MCP integrations, third-party synchronization, microservices, messaging systems, and asynchronous workflows.</p><div class="stack"><span class="tag">AI tools</span><span class="tag">MCP</span><span class="tag">Microservices</span><span class="tag">Messaging</span></div></div></article>
+        <article class="timeline-item"><div class="date">07/2023 — 10/2025</div><div class="card"><h3>Fullstack Developer — Digi Crafterz</h3><p>Collaborated across backend, frontend, and DevOps teams on multiple platforms. Built secure APIs, RBAC, WebSocket/API notifications, production troubleshooting, and database performance improvements up to 30%.</p><div class="stack"><span class="tag">.NET</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">RBAC</span></div></div></article>
+        <article class="timeline-item"><div class="date">03/2025 — 08/2025</div><div class="card"><h3>Backend Developer — Madarj</h3><p>Part-time backend role focused on scalable APIs, secure authentication, role-based access control, real-time notification integrations, code reviews, and deployment troubleshooting.</p><div class="stack"><span class="tag">REST APIs</span><span class="tag">WebSocket</span><span class="tag">SQL</span><span class="tag">Testing</span></div></div></article>
+      </div>
+    </section>
+
+    <section id="projects" class="shell" aria-labelledby="projects-title">
+      <div class="section-head"><div><div class="eyebrow">Case studies</div><h2 id="projects-title">Projects framed by problem, contribution, and result.</h2><p>Private/internal systems are labelled honestly. Team projects are credited as team contributions. No heroic fiction. Boring truth beats shiny nonsense.</p></div></div>
+      <div class="grid case-grid">
+        <article class="case featured"><div class="case-top"><div class="badges"><span class="badge">AI platform</span><span class="badge private">Internal</span></div><h3>AIMY — AI-Powered Services Platform</h3><p>FlairsTech proprietary platform for intelligent automation and operational workflow support.</p><div class="stack"><span class="tag">Clean Architecture</span><span class="tag">Microservices</span><span class="tag">MCP</span><span class="tag">Messaging</span><span class="tag">Qdrant</span></div></div><div class="case-body"><ul class="proof-list"><li><strong>Problem:</strong> Business workflows needed automation, knowledge retrieval, third-party sync, and scalable service boundaries.</li><li><strong>Contribution:</strong> Worked on backend services, AI-powered tools, MCP integrations, and reliable data synchronization across internal/external systems.</li><li><strong>Engineering result:</strong> Improved maintainability through clean architecture, event-driven workflows, and separation of concerns.</li></ul></div></article>
+        <article class="case featured"><div class="case-top"><div class="badges"><span class="badge">Healthcare</span><span class="badge team">Team Contribution</span><span class="badge private">Private</span></div><h3>MyAPA / APA Suite — Admin, Doctor, Patient</h3><p>Healthcare workflows around clinic operations, doctor tools, patient access, and AdvancedMD data integration.</p><div class="stack"><span class="tag">.NET APIs</span><span class="tag">Next.js</span><span class="tag">MUI</span><span class="tag">Electron</span><span class="tag">AdvancedMD</span></div></div><div class="case-body"><ul class="proof-list"><li><strong>Problem:</strong> Clinics needed organized access to patient data, operational workflows, and secure communication with healthcare systems.</li><li><strong>Contribution:</strong> Contributed with the Digi Crafterz team on APA Admin, APA Doctor, APA Patient, and MyAPA Health integrations.</li><li><strong>Engineering result:</strong> Supported real-time patient data synchronization, structured data models, secure API communication, and HIPAA-aware handling.</li></ul></div></article>
+        <article class="case"><div class="case-top"><div class="badges"><span class="badge">Logistics</span><span class="badge team">Team Contribution</span></div><h3>Shippingify Admin</h3><p>Admin system for shipping operations and management workflows.</p></div><div class="case-body"><ul class="proof-list"><li><strong>Contribution:</strong> Collaborated on UI/API integration and admin workflows as part of the delivery team.</li><li><strong>Result:</strong> Helped streamline shipping-company operations through maintainable admin interfaces.</li></ul><div class="stack"><span class="tag">Next.js</span><span class="tag">React TS</span><span class="tag">MUI</span><span class="tag">APIs</span></div></div></article>
+        <article class="case"><div class="case-top"><div class="badges"><span class="badge">Real Estate</span><span class="badge private">Private</span></div><h3>Real Estate Evaluation Management System</h3><p>Dynamic property evaluation platform with hierarchical approvals.</p></div><div class="case-body"><ul class="proof-list"><li><strong>Problem:</strong> Property valuation workflows needed accurate inputs, role separation, and review/approval stages.</li><li><strong>Result:</strong> Built dynamic forms and role-based approval flows to improve transparency and decision quality.</li></ul><div class="stack"><span class="tag">.NET</span><span class="tag">RBAC</span><span class="tag">Dynamic Forms</span></div></div></article>
+        <article class="case"><div class="case-top"><div class="badges"><span class="badge">Education</span></div><h3>IWingo — Educational Platform</h3><p>English-learning platform with subscriptions and interactive lessons.</p></div><div class="case-body"><ul class="proof-list"><li><strong>Contribution:</strong> Developed full-stack features with Next.js and .NET Core.</li><li><strong>Result:</strong> Integrated Stripe subscriptions and free trials to support onboarding and conversion.</li></ul><div class="stack"><span class="tag">Next.js</span><span class="tag">.NET Core</span><span class="tag">Stripe</span></div></div></article>
+        <article class="case"><div class="case-top"><div class="badges"><span class="badge">Government</span><span class="badge private">Private</span></div><h3>GCC Customs Union Authority</h3><p>Regional customs management and tariff data platform.</p></div><div class="case-body"><ul class="proof-list"><li><strong>Contribution:</strong> Backend development with test-driven practices for scalable tariff data processing.</li><li><strong>Result:</strong> Improved tariff operations and data accessibility, including AI-driven chatbot features for faster retrieval.</li></ul><div class="stack"><span class="tag">.NET APIs</span><span class="tag">TDD</span><span class="tag">AI Features</span></div></div></article>
+      </div>
+    </section>
+
+    <section id="skills" class="shell" aria-labelledby="skills-title">
+      <div class="section-head"><div><div class="eyebrow">Skills matrix</div><h2 id="skills-title">Grouped by engineering value.</h2></div></div>
+      <div class="grid skills-grid">
+        <article class="card skill-card"><h3>Backend</h3><ul><li>.NET Core</li><li>RESTful APIs</li><li>SQL Server / PostgreSQL</li><li>CQRS, DDD, TDD</li><li>Clean Architecture</li></ul></article>
+        <article class="card skill-card"><h3>Frontend</h3><ul><li>React.js</li><li>Next.js</li><li>TypeScript</li><li>Material UI</li><li>Tailwind / Sass</li></ul></article>
+        <article class="card skill-card"><h3>Cloud & DevOps</h3><ul><li>AWS / GCP</li><li>S3 / ECS / EC2</li><li>IIS</li><li>Git / GitHub</li><li>Deployment troubleshooting</li></ul></article>
+        <article class="card skill-card"><h3>AI & Integration</h3><ul><li>MCP integrations</li><li>Qdrant</li><li>Messaging systems</li><li>Third-party sync</li><li>WebSocket notifications</li></ul></article>
+      </div>
+    </section>
+
+    <section id="quality" class="shell" aria-labelledby="quality-title">
+      <div class="section-head"><div><div class="eyebrow">Quality targets</div><h2 id="quality-title">Fast, accessible, mobile-first.</h2><p>The portfolio itself should demonstrate engineering taste: lightweight build, semantic HTML, clear SEO, reduced-motion support, and responsive layouts.</p></div></div>
+      <div class="grid quality">
+        <article class="card"><h3>Performance</h3><p>Static-first, zero framework dependency in v1, optional canvas animation, no heavy 3D assets, immediate content render.</p></article>
+        <article class="card"><h3>Accessibility</h3><p>Skip link, semantic landmarks, keyboard focus states, high contrast, 44px mobile targets, reduced-motion handling.</p></article>
+        <article class="card"><h3>SEO</h3><p>Clear title/description, Open Graph metadata, canonical URL placeholder, JSON-LD Person schema, and proper heading hierarchy.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="shell" aria-labelledby="contact-title">
+      <div class="contact-card">
+        <div><div class="eyebrow">Contact</div><h2 id="contact-title">Let’s build systems that survive real users.</h2><p class="muted">Available for engineering roles, backend-heavy full-stack work, integrations, AI workflow tools, and production system delivery.</p></div>
+        <div class="contact-actions" aria-label="Contact actions">
+          <a class="btn primary" href="mailto:m7mdgamal157@gmail.com">m7mdgamal157@gmail.com</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/mohamed-gomaa-7b88b727b/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+          <a class="btn ghost" href="https://github.com/Medogamal157" target="_blank" rel="noreferrer">GitHub Profile</a>
+          <a class="btn ghost" href="public/Mohamed_Gomaa_FlowCV_Resume_2026-06-23.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="shell">© <span id="year"></span> Mohamed Gomaa. Built static-first for speed, SEO, accessibility, and easy Vercel deployment.</div></footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const canvas = document.getElementById('mesh');
+    if (canvas && !reduce) {
+      const ctx = canvas.getContext('2d');
+      const labels = ['.NET','React','Next.js','MCP','AI','APIs','Cloud','SQL','RBAC','Qdrant'];
+      let nodes = [];
+      function resize() {
+        const rect = canvas.parentElement.getBoundingClientRect();
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.floor(rect.width * dpr);
+        canvas.height = Math.floor(rect.height * dpr);
+        ctx.setTransform(dpr,0,0,dpr,0,0);
+        const w = rect.width, h = rect.height;
+        nodes = labels.map((label, i) => {
+          const angle = (Math.PI * 2 * i) / labels.length;
+          const r = Math.min(w,h) * (.22 + (i % 3) * .035);
+          return { label, base: angle, r, x: w/2, y: h/2, speed: .00022 + (i%4)*.000035 };
+        });
+      }
+      function draw(t) {
+        const w = canvas.clientWidth, h = canvas.clientHeight;
+        ctx.clearRect(0,0,w,h);
+        const grd = ctx.createRadialGradient(w/2,h/2,20,w/2,h/2,Math.max(w,h)/1.7);
+        grd.addColorStop(0,'rgba(110,231,255,.16)'); grd.addColorStop(1,'rgba(5,9,19,0)');
+        ctx.fillStyle = grd; ctx.fillRect(0,0,w,h);
+        const pts = nodes.map((n,i)=>({ ...n, x: w/2 + Math.cos(n.base + t*n.speed)*n.r*1.45, y: h/2 + Math.sin(n.base + t*n.speed*1.35)*n.r }));
+        for (let i=0;i<pts.length;i++) for (let j=i+1;j<pts.length;j++) {
+          const a=pts[i], b=pts[j], dist=Math.hypot(a.x-b.x,a.y-b.y);
+          if (dist < Math.min(w,h)*.46) { ctx.strokeStyle = `rgba(110,231,255,${Math.max(0,.23-dist/900)})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke(); }
+        }
+        pts.forEach((p,i)=>{
+          ctx.beginPath(); ctx.arc(p.x,p.y, i%3===0?6:4, 0, Math.PI*2); ctx.fillStyle = i%2 ? '#7dffba' : '#6ee7ff'; ctx.fill();
+          ctx.font = '700 12px ui-monospace, monospace'; ctx.fillStyle = 'rgba(245,248,255,.9)'; ctx.fillText(p.label, p.x + 10, p.y - 8);
+        });
+        requestAnimationFrame(draw);
+      }
+      resize(); window.addEventListener('resize', resize, {passive:true}); requestAnimationFrame(draw);
+    }
+  </script>
+</body>
+</html>
