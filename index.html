@@ -130,6 +130,8 @@
     .proof-list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
     .proof-list li { border-left: 2px solid rgba(110,231,255,.55); padding-left: 12px; color: var(--muted); }
     .proof-list strong { color: var(--text); }
+    .project-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 18px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: 999px; color: var(--cyan); font-weight: 800; }
+    .project-link:hover { color: var(--text); background: rgba(110,231,255,.1); }
     .project-toggle { display: none; width: 100%; margin-top: 16px; cursor: pointer; }
     .skills-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
     .skill-card ul { padding-left: 18px; margin: 14px 0 0; color: var(--muted); }
@@ -171,6 +173,7 @@
       .visual-card, #mesh { min-height: 270px; }
       .visual-overlay { inset: auto 12px 12px; }
       .system-pill { display: grid; gap: 3px; }
+      .project-link { width: 100%; justify-content: center; }
       #projects:not(.show-all) .case-more { display: none; }
       .project-toggle { display: inline-flex; }
       .contact-card { padding: 20px; }
@@ -191,7 +194,7 @@
       <a class="brand" href="#top" aria-label="Mohamed Gomaa home"><span class="brand-mark">MG</span><span>Mohamed Gomaa</span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation menu"><span></span></button>
       <div class="nav-links" id="primary-links">
-        <a href="#overview">Overview</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#quality">Quality</a><a href="#contact">Contact</a>
+        <a href="#overview">Overview</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#quality">Approach</a><a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
@@ -218,13 +221,13 @@
         <canvas id="mesh" aria-hidden="true"></canvas>
         <div class="visual-overlay">
           <div class="system-pill"><b>Architecture</b><span>Clean • Microservices • APIs</span></div>
-          <div class="system-pill"><b>Delivery</b><span>Result-focused systems, not portfolio fluff</span></div>
+          <div class="system-pill"><b>Delivery</b><span>Reliable systems for real operational work</span></div>
         </div>
       </aside>
     </section>
 
     <section id="overview" class="shell" aria-labelledby="overview-title">
-      <div class="section-head"><div><div class="eyebrow">Overview</div><h2 id="overview-title">Engineering value, made visible.</h2><p>Same clean portfolio flow as the reference site, but with sharper proof: what was built, why it mattered, and where Mohamed contributed.</p></div></div>
+      <div class="section-head"><div><div class="eyebrow">Overview</div><h2 id="overview-title">Engineering value, made visible.</h2><p>Backend-heavy product engineering: secure integrations, dependable workflows, and user-facing tools built for real operations.</p></div></div>
       <div class="grid overview-grid">
         <article class="card"><div class="icon">API</div><h3>Backend Engineering</h3><p>.NET Core, REST APIs, secure auth, RBAC, SQL optimization, clean architecture, and integration-heavy backend services.</p></article>
         <article class="card"><div class="icon">UI</div><h3>Full-Stack Products</h3><p>React, Next.js, TypeScript, Material UI, Tailwind, and user-facing workflows tied to real business operations.</p></article>
@@ -243,12 +246,12 @@
     </section>
 
     <section id="projects" class="shell" aria-labelledby="projects-title">
-      <div class="section-head"><div><div class="eyebrow">Case studies</div><h2 id="projects-title">Projects framed by problem, contribution, and result.</h2><p>Private/internal systems are labelled honestly. Team projects are credited as team contributions. No heroic fiction. Boring truth beats shiny nonsense.</p></div></div>
+      <div class="section-head"><div><div class="eyebrow">Selected work</div><h2 id="projects-title">Projects framed by problem, contribution, and result.</h2><p>Each case study separates the product from Mohamed’s contribution. Public references are included where appropriate.</p></div></div>
       <div class="grid case-grid">
-        <article class="case featured"><div class="case-top"><div class="badges"><span class="badge">AI platform</span><span class="badge private">Internal</span></div><h3>AIMY — AI-Powered Services Platform</h3><p>FlairsTech proprietary platform for intelligent automation and operational workflow support.</p><div class="stack"><span class="tag">Clean Architecture</span><span class="tag">Microservices</span><span class="tag">MCP</span><span class="tag">Messaging</span><span class="tag">Qdrant</span></div></div><div class="case-body"><ul class="proof-list"><li><strong>Problem:</strong> Business workflows needed automation, knowledge retrieval, third-party sync, and scalable service boundaries.</li><li><strong>Contribution:</strong> Worked on backend services, AI-powered tools, MCP integrations, and reliable data synchronization across internal/external systems.</li><li><strong>Engineering result:</strong> Improved maintainability through clean architecture, event-driven workflows, and separation of concerns.</li></ul></div></article>
-        <article class="case featured"><div class="case-top"><div class="badges"><span class="badge">Healthcare</span><span class="badge team">Team Contribution</span><span class="badge private">Private</span></div><h3>MyAPA / APA Suite — Admin, Doctor, Patient</h3><p>Healthcare workflows around clinic operations, doctor tools, patient access, and AdvancedMD data integration.</p><div class="stack"><span class="tag">.NET APIs</span><span class="tag">Next.js</span><span class="tag">MUI</span><span class="tag">Electron</span><span class="tag">AdvancedMD</span></div></div><div class="case-body"><ul class="proof-list"><li><strong>Problem:</strong> Clinics needed organized access to patient data, operational workflows, and secure communication with healthcare systems.</li><li><strong>Contribution:</strong> Contributed with the Digi Crafterz team on APA Admin, APA Doctor, APA Patient, and MyAPA Health integrations.</li><li><strong>Engineering result:</strong> Supported real-time patient data synchronization, structured data models, secure API communication, and HIPAA-aware handling.</li></ul></div></article>
+        <article class="case featured"><div class="case-top"><div class="badges"><span class="badge">AI platform</span><span class="badge team">Public product</span></div><h3>AIMY — AI-Powered Services Platform</h3><p>FlairsTech proprietary platform for intelligent automation and operational workflow support.</p><div class="stack"><span class="tag">Clean Architecture</span><span class="tag">Microservices</span><span class="tag">MCP</span><span class="tag">Messaging</span><span class="tag">Qdrant</span></div><a class="project-link" href="https://flairstech.com/aimy" target="_blank" rel="noreferrer">View AIMY <span aria-hidden="true">↗</span></a></div><div class="case-body"><ul class="proof-list"><li><strong>Problem:</strong> Business workflows needed automation, knowledge retrieval, third-party sync, and scalable service boundaries.</li><li><strong>Contribution:</strong> Worked on backend services, AI-powered tools, MCP integrations, and reliable data synchronization across internal/external systems.</li><li><strong>Engineering result:</strong> Improved maintainability through clean architecture, event-driven workflows, and separation of concerns.</li></ul></div></article>
+        <article class="case featured"><div class="case-top"><div class="badges"><span class="badge">Healthcare</span><span class="badge team">Team Contribution</span><span class="badge private">Private workflows</span></div><h3>MyAPA / APA Suite — Admin, Doctor, Patient</h3><p>Healthcare workflows around clinic operations, doctor tools, patient access, and AdvancedMD data integration.</p><div class="stack"><span class="tag">.NET APIs</span><span class="tag">Next.js</span><span class="tag">MUI</span><span class="tag">Electron</span><span class="tag">AdvancedMD</span></div><a class="project-link" href="https://advancedpsychiatryassociates.com" target="_blank" rel="noreferrer">Visit APA <span aria-hidden="true">↗</span></a></div><div class="case-body"><ul class="proof-list"><li><strong>Problem:</strong> Clinics needed organized access to patient data, operational workflows, and secure communication with healthcare systems.</li><li><strong>Contribution:</strong> Contributed with the Digi Crafterz team on APA Admin, APA Doctor, APA Patient, and MyAPA Health integrations.</li><li><strong>Engineering result:</strong> Supported real-time patient data synchronization, structured data models, secure API communication, and HIPAA-aware handling.</li></ul></div></article>
         <article class="case case-more"><div class="case-top"><div class="badges"><span class="badge">Logistics</span><span class="badge team">Team Contribution</span></div><h3>Shippingify Admin</h3><p>Admin system for shipping operations and management workflows.</p></div><div class="case-body"><ul class="proof-list"><li><strong>Contribution:</strong> Collaborated on UI/API integration and admin workflows as part of the delivery team.</li><li><strong>Result:</strong> Helped streamline shipping-company operations through maintainable admin interfaces.</li></ul><div class="stack"><span class="tag">Next.js</span><span class="tag">React TS</span><span class="tag">MUI</span><span class="tag">APIs</span></div></div></article>
-        <article class="case"><div class="case-top"><div class="badges"><span class="badge">Real Estate</span><span class="badge private">Private</span></div><h3>Real Estate Evaluation Management System</h3><p>Dynamic property evaluation platform with hierarchical approvals.</p></div><div class="case-body"><ul class="proof-list"><li><strong>Problem:</strong> Property valuation workflows needed accurate inputs, role separation, and review/approval stages.</li><li><strong>Result:</strong> Built dynamic forms and role-based approval flows to improve transparency and decision quality.</li></ul><div class="stack"><span class="tag">.NET</span><span class="tag">RBAC</span><span class="tag">Dynamic Forms</span></div></div></article>
+        <article class="case"><div class="case-top"><div class="badges"><span class="badge">Real Estate</span><span class="badge team">Public product</span></div><h3>Valion — Real Estate Evaluation Platform</h3><p>Dynamic property evaluation platform with hierarchical approvals.</p></div><div class="case-body"><ul class="proof-list"><li><strong>Problem:</strong> Property valuation workflows needed accurate inputs, role separation, and review/approval stages.</li><li><strong>Result:</strong> Built dynamic forms and role-based approval flows to improve transparency and decision quality.</li></ul><div class="stack"><span class="tag">.NET</span><span class="tag">RBAC</span><span class="tag">Dynamic Forms</span></div><a class="project-link" href="https://www.valion-app.com/en/landing" target="_blank" rel="noreferrer">Explore Valion <span aria-hidden="true">↗</span></a></div></article>
         <article class="case case-more"><div class="case-top"><div class="badges"><span class="badge">Education</span></div><h3>IWingo — Educational Platform</h3><p>English-learning platform with subscriptions and interactive lessons.</p></div><div class="case-body"><ul class="proof-list"><li><strong>Contribution:</strong> Developed full-stack features with Next.js and .NET Core.</li><li><strong>Result:</strong> Integrated Stripe subscriptions and free trials to support onboarding and conversion.</li></ul><div class="stack"><span class="tag">Next.js</span><span class="tag">.NET Core</span><span class="tag">Stripe</span></div></div></article>
         <article class="case case-more"><div class="case-top"><div class="badges"><span class="badge">Government</span><span class="badge private">Private</span></div><h3>GCC Customs Union Authority</h3><p>Regional customs management and tariff data platform.</p></div><div class="case-body"><ul class="proof-list"><li><strong>Contribution:</strong> Backend development with test-driven practices for scalable tariff data processing.</li><li><strong>Result:</strong> Improved tariff operations and data accessibility, including AI-driven chatbot features for faster retrieval.</li></ul><div class="stack"><span class="tag">.NET APIs</span><span class="tag">TDD</span><span class="tag">AI Features</span></div></div></article>
       </div>
@@ -266,11 +269,11 @@
     </section>
 
     <section id="quality" class="shell" aria-labelledby="quality-title">
-      <div class="section-head"><div><div class="eyebrow">Quality targets</div><h2 id="quality-title">Fast, accessible, mobile-first.</h2><p>The portfolio itself should demonstrate engineering taste: lightweight build, semantic HTML, clear SEO, reduced-motion support, and responsive layouts.</p></div></div>
+      <div class="section-head"><div><div class="eyebrow">Engineering approach</div><h2 id="quality-title">Reliable by design.</h2><p>I favour clear interfaces, accessible experiences, and maintainable systems that stay understandable after launch.</p></div></div>
       <div class="grid quality">
-        <article class="card"><h3>Performance</h3><p>Static-first, zero framework dependency in v1, optional canvas animation, no heavy 3D assets, immediate content render.</p></article>
-        <article class="card"><h3>Accessibility</h3><p>Skip link, semantic landmarks, keyboard focus states, high contrast, 44px mobile targets, reduced-motion handling.</p></article>
-        <article class="card"><h3>SEO</h3><p>Clear title/description, Open Graph metadata, canonical URL placeholder, JSON-LD Person schema, and proper heading hierarchy.</p></article>
+        <article class="card"><h3>Performance</h3><p>Lean delivery, efficient data access, and interfaces that prioritise fast, useful feedback for real users.</p></article>
+        <article class="card"><h3>Accessibility</h3><p>Clear interaction patterns, keyboard-friendly controls, readable contrast, and mobile targets built for everyday use.</p></article>
+        <article class="card"><h3>Maintainability</h3><p>Clean boundaries, practical testing, explicit integrations, and code that teams can safely extend and operate.</p></article>
       </div>
     </section>
 
@@ -287,7 +290,7 @@
     </section>
   </main>
 
-  <footer><div class="shell">© <span id="year"></span> Mohamed Gomaa. Built static-first for speed, SEO, accessibility, and easy Vercel deployment.</div></footer>
+  <footer><div class="shell">© <span id="year"></span> Mohamed Gomaa. Full-Stack Software Engineer.</div></footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
